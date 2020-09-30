@@ -25,7 +25,7 @@ Día 2
 
 Estructura de una página web:
 
-Construimos la estructura general de la web mediante elementos semánticos de tipo bloque:
+Construimos la estructura general de la web mediante elementos semánticos estructurales:
 header, main, section, article, footer, aside, nav...
 
 Desarrollamos cada uno de los bloques utilizando el resto de elementos semánticos:
