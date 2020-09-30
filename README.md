@@ -20,3 +20,19 @@ Imágenes - etiqueta sin cierre
 Listas ordenadas y desordenadas
 
 Clonamos la TRIBUTE PAGE
+
+Día 2
+
+Estructura de una página web:
+
+Construimos la estructura general de la web mediante elementos semánticos de tipo bloque:
+header, main, section, article, footer, aside, nav...
+
+Desarrollamos cada uno de los bloques utilizando el resto de elementos semánticos:
+h1,h2,..., ul, ol, p, table, etc.
+
+Todo el contenido que mostrará la página siempre dentro de la etiqueta body.
+Toda la información no visual, que sirve para dar información al navegador, dentro de la etiqueta head.
+
+Utilizamos atajos para trabajar en codepen.io, recogidos en esta [página de resumen](https://docs.emmet.io/cheat-sheet/)
+Clonamos el blog de la página Andén 27: https://codepen.io/rglepe/pen/OJNYwXy
