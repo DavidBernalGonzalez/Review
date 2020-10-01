@@ -19,7 +19,7 @@ Párrafos - p
 Imágenes - etiqueta sin cierre
 Listas ordenadas y desordenadas
 
-Clonamos la TRIBUTE PAGE
+Clonamos la TRIBUTE PAGE:Ejercicio entregable
 
 Día 2
 
@@ -36,3 +36,14 @@ Toda la información no visual, que sirve para dar información al navegador, de
 
 Utilizamos atajos para trabajar en codepen.io, recogidos en esta [página de resumen](https://docs.emmet.io/cheat-sheet/)
 Clonamos el blog de la página Andén 27: https://codepen.io/rglepe/pen/OJNYwXy
+
+Día 3
+Comenzamos reunión de proyecto sprint
+Repaso de estructura de HTML
+Inicio CSS:
+formato de una regla CSS
+concepto de herencia de estilos
+selectores de id y de clase
+
+Ejercicio con selectores de clase
+Recepta de la iaia. EJercicio entregable
