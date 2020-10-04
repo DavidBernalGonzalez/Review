@@ -38,8 +38,14 @@ Utilizamos atajos para trabajar en codepen.io, recogidos en esta [página de res
 Clonamos el blog de la página Andén 27: https://codepen.io/rglepe/pen/OJNYwXy
 
 Día 3
+
 Comenzamos reunión de proyecto sprint
+
+Montamos Visual Studio Code, la herramienta de desarrollo que utilizaremos. Extensiones interesantes: BrowserSync, Colorize, ...
+
+
 Repaso de estructura de HTML
+
 Inicio CSS:
 formato de una regla CSS
 concepto de herencia de estilos
@@ -47,3 +53,28 @@ selectores de id y de clase
 
 Ejercicio con selectores de clase
 Recepta de la iaia. EJercicio entregable
+
+Día 4
+
+Comenzamos con reunión diaria
+
+Hablamos de Git, el sistema de control de versiones:
+  - Guarda Versiones del código
+  - Permite trabajo colaborativo
+  - Trabajamos con GitHub
+ 
+ Instalamos desde la página oficial de git.
+ 
+ Para trabajar con un repositorio de GitHub: `git clone <url del repositorio de Github>`
+ 
+ Para subir cambios a GitHub:
+ 1. Preparamos el código: `git add .`
+ 2. Hacemos commit: `git commit -m 'Escribimos el mensaje que queramos'
+ 3. Subimos los cambios a Github: `git push`
+ 
+ CSS:
+ Trabajamos con los distintos selectores CSS, para aumentar la especificidad a la hora de aplicar los estilos:
+ 
+ Jugamos a [CSS Diner](https://flukeout.github.io/)
+ 
+ 
