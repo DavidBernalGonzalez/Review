@@ -77,4 +77,5 @@ Hablamos de Git, el sistema de control de versiones:
  
  Jugamos a [CSS Diner](https://flukeout.github.io/)
  
+ Comenzamos [la página personal](https://codepen.io/freeCodeCamp/full/zNBOYG)
  
