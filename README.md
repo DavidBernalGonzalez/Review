@@ -79,3 +79,36 @@ Hablamos de Git, el sistema de control de versiones:
  
  Comenzamos [la página personal](https://codepen.io/freeCodeCamp/full/zNBOYG)
  
+ Día 5
+ 
+ Problemas con las fuerzas del orden.
+ 
+ Hoy toca Git, comenzando desde local. Si partimos de un código ya existente en local, realizaremos los siguientes pasos para subir a Github:
+ 1. Sólo la primera vez: `git init`
+ 2. `git add .`
+ 3. `git commit -m 'message'`
+ 4. Sólo la primera vez. Creamos un repositorio vació en github y copiamos su url.
+ 5. Sólo la primera vez, damos de alta el repositorio remoto: `git remote add origin <<url repositorio>>`
+ 6. Subimos al repositorio: `git push origin master`
+ 
+ Vemos pseudo-elementos que permiten modificar o añadir contenido al html: before, after, first-letter, first-line, ...
+ Vemos pseudo-clases que permiten añadir estilos a estados concretos de algunos elementos: link, visited, hover, ...
+ 
+ El modelo de caja (model box): 
+ - Ancho de caja = margen izqdo + borde izqdo + padding izqdo + contenido + padding dcho + borde dcho + margen dcho
+ - Alto de caja = margen superior + borde superior + padding superior + contenido + padding inferior + borde inferior + margen inferior
+ 
+ Propiedad `box-sizing` permite fijar la referencia al ancho estándar (border-box) o al contenido (content-box)
+ 
+ Positioning
+  - display: fijamos cómo aparecen los elementos en el flujo de la página: block vs inline (inline-block, otros...)
+  - position: fijamos dónde aparecen los elementos en el flujo de la página. Se establece el inicio de coordenadas (0,0) en el vértice superior izdo de la pantalla. Los valores posibles: relative, absolute, fixed, sticky
+  - float: los elementos "flotan", dejan de ocupar el espacio original y se desplazan hacia arriba.
+  
+ Comenzamos Programación 
+ - Introducimos el concepto de DOM. La página web se modela como un árbol de nodos ocupados por los elementos html.
+ - Hablamos del editor de javascript (repl) y realizamos nuestro primer programa con salida a consola y a web.
+ 
+ 
+
+ 
