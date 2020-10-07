@@ -109,6 +109,25 @@ Hablamos de Git, el sistema de control de versiones:
  - Introducimos el concepto de DOM. La página web se modela como un árbol de nodos ocupados por los elementos html.
  - Hablamos del editor de javascript (repl) y realizamos nuestro primer programa con salida a consola y a web.
  
+ Día 6
  
+ Fundamentos de Javascript: variables.
+  Variables son estructuras de memoria para almacenar información de nuestra app
+  Una palabra reservada: var, let y const. Ej.: let miVariable = 5;
+   let num = 1;  tipo number
+   let text = "hola mundo"; tipo string
+   let isPresent = true; tipo boolean
+   let sinValor; tipo undefined
+  
+  Program
+   Mediante un pop-up del navegador: window.prompt("Dame un num"); window.alert(resultado)
+   
+  FLEXBOX
+    Se aplica sobre los hijos, pero se define en el padre con display:flex, justify-content, order, ...
+  
+  Clonamos la _landing-page_ de Spotify, ejercicio evaluable.
+   
+   
+  
 
  
