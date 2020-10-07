@@ -126,6 +126,21 @@ Hablamos de Git, el sistema de control de versiones:
     Se aplica sobre los hijos, pero se define en el padre con display:flex, justify-content, order, ...
   
   Clonamos la _landing-page_ de Spotify, ejercicio evaluable.
+  
+  Día 7
+  
+  Fundamentos de Javascript: Objeto String y toma de decisiones (if..else)
+  Ejercicio encontrar la letra de un texto con salida a terminal y web.
+  
+  CSS Responsive
+  reglas de _media query_ nos permiten adaptarnos a un ancho concreto de dispositivo
+  Programación mobile first
+  Unidades de medida responsive (vh y vw)
+  
+  Ejercicio: responsive-slack, ejercicio evaluable
+  
+  
+  
    
    
   
