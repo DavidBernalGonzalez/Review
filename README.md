@@ -139,6 +139,15 @@ Hablamos de Git, el sistema de control de versiones:
   
   Ejercicio: responsive-slack, ejercicio evaluable
   
+  Día 8
+  
+  Fundamentos de JavaScript: Hablamos de condiciones complejas: if...else if...else, switch...case
+   - Operadores lógicos: && (y) || (o)
+  Ejercicio: bar y bebidas.
+  
+  Tiempo de desarrollo libre.
+  
+  
   
   
    
