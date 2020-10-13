@@ -147,6 +147,19 @@ Hablamos de Git, el sistema de control de versiones:
   
   Tiempo de desarrollo libre.
   
+  Día 9
+  
+  Fundamentos de Javascript: Bucle For
+  Basics-JS.
+  
+  CSS: Transformaciones, transiciones y animaciones.
+  Mandamos el reloj.
+  
+  
+  
+  
+  
+  
   
   
   
