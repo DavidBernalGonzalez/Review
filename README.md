@@ -155,7 +155,46 @@ Hablamos de Git, el sistema de control de versiones:
   CSS: Transformaciones, transiciones y animaciones.
   Mandamos el reloj.
   
+  Día 10
   
+  Funciones JavaScript: 
+    - function generarRandom(parametros){
+        let aleatorio = Math.floor((Math.random()*10)+1);
+        return aleatorio;
+    }
+    
+    - const numeroRandom = function(parametros){
+        let aleatorio = Math.floor((Math.random()*10)+1);
+        return aleatorio;
+    }
+    
+    - const numeroRandomFlecha = (parametros) => {
+        let aleatorio = Math.floor((Math.random()*10)+1);
+        return aleatorio;
+    }
+    
+    let numero1 = generarRandom();
+    let numero2 = numeroRandom();
+    let numero3 = numeroRandomFlecha();
+    
+    console.log(numero1);
+    
+    Funciones en JavaScript _First-class functions_:
+     Son OBJETOS. 
+     Si se pasan por parámetro son funciones de callback: 
+     
+     const functionOne = (x) => console.log(x);
+     
+     const functionTwo = (var1, var2) => var2(var1); 
+     
+     functionTwo(2, functionOne) ~ functionTwo(2, (x)=>console.log(x));
+     
+     
+     Dos ejercicios: Travel-agency y Averigua un número.
+    
+    
+    
+    
   
   
   
