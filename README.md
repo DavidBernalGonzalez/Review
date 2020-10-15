@@ -192,7 +192,25 @@ Hablamos de Git, el sistema de control de versiones:
      
      Dos ejercicios: Travel-agency y Averigua un número.
     
+    Día 11
     
+    Funciones en JavaScript: Arrays
+    
+    Arrays: colecciones ordenadas de elementos.
+    
+    Se define con su literal: [ ];
+    Son objetos: `let miArray = [ ];`
+    
+    let numeros = [1,2,3,4,5];
+    let mascostas = ["perro","gato",4, null, true,{nombre: Osama}, [1,2,3,4]]
+    
+    console.log(numeros[0]); // -> 1
+    
+    for(let i = 0; i< numeros.length; i++){
+      console.log(numeros[i]);
+    }
+    
+    Ejercicio funciones-arrays con testing.
     
     
   
