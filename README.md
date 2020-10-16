@@ -212,6 +212,19 @@ Hablamos de Git, el sistema de control de versiones:
     
     Ejercicio funciones-arrays con testing.
     
+    Día 12
+    
+    Funciones de Array iteradoras: `array.map(callback)` `array.reduce(callback)`
+    
+    Ejercicios de Arrays.
+    
+    Objetos: {_key:value_, _key:value_}. 
+    - NombreObjeto.nombrePropiedad => inserta la prop en el obj si no existe y si existe sustituye el valor.
+    - NombreObjeto["nombrePropiedad"]
+    
+    Recorrer objetos: for(let prop in array){ console.log(array[prop]) }
+    
+    Ejercicio de academia.
     
   
   
