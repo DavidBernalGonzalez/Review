@@ -227,8 +227,37 @@ Hablamos de Git, el sistema de control de versiones:
     Ejercicio de academia.
     
   
+  Día 12
   
+  Monográfico de CSS Grid. 
+  - Se aplica sobre el contenedor (= flex)
+  - Grid primero definimos la cuadrícula:
+    .grid{
+      display:grid;
+      grid-template-row: repeat(4, 5rem);
+      grid-template-column: repeat(4, 5rem);
+      }
+     
+     .grid-item1{
+     grid-row: 1 /span 2;
+     grid-column: 4;
+     }
+     
+   .grid{
+       width: 100%;
+       height: 100vh;
+       display:grid;
+       grid-template-areas: 
+       "header header"
+       "main   aside"
+       "footer footer"
+   }
+   
+   header{
+    grid-area: header;
+   }
   
+  Corregimos el ejercicio de arrays-guapos. array.Map y array.Reduce
   
   
   
