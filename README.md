@@ -259,6 +259,13 @@ Hablamos de Git, el sistema de control de versiones:
   
   Corregimos el ejercicio de arrays-guapos. array.Map y array.Reduce
   
+  Día 13
+  
+  Trabajando con arrays y objetos dentro de funciones. Ejercicio del cluedo. 
+  
+  Introducción al DOM. La representación de un documento html en forma de árbol. La necesita JavaScript para poder interaccionar con la página.
+  1. Obtener el elemento que queremos manipular
+  2. Después modificamos estilos, añadimos nuevos nodos hijos, etc.
   
   
   
