@@ -273,10 +273,16 @@ Trabajando con arrays y objetos dentro de funciones. Ejercicio del cluedo.
 Introducción al DOM. La representación de un documento html en forma de árbol. La necesita JavaScript para poder interaccionar con la página.
   1. Obtener el elemento que queremos manipular
   2. Después modificamos estilos, añadimos nuevos nodos hijos, etc.
-  
+
+
 Día 15
 
-  DOM manipulation:
+Intro al DOM manipulation:
+    - Selecció de elements.
+    - Modificació de estils.
+    - Exercicis de manipulació del dom: tres botons i formulari
+    
+Dia 16:
 
 - CSS
 ```css
@@ -301,7 +307,7 @@ Día 15
     
     parrafo.removeEventListener('mouseover',callback);
 ```
-    
+Ejercicio: Hackaton
     
    
    
