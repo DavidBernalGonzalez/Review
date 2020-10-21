@@ -158,17 +158,20 @@ Hablamos de Git, el sistema de control de versiones:
   Día 10
   
   Funciones JavaScript: 
-    - function generarRandom(parametros){
+    
+    ```js
+    
+    function generarRandom(parametros){
         let aleatorio = Math.floor((Math.random()*10)+1);
         return aleatorio;
     }
     
-    - const numeroRandom = function(parametros){
+    const numeroRandom = function(parametros){
         let aleatorio = Math.floor((Math.random()*10)+1);
         return aleatorio;
     }
     
-    - const numeroRandomFlecha = (parametros) => {
+    const numeroRandomFlecha = (parametros) => {
         let aleatorio = Math.floor((Math.random()*10)+1);
         return aleatorio;
     }
@@ -178,60 +181,66 @@ Hablamos de Git, el sistema de control de versiones:
     let numero3 = numeroRandomFlecha();
     
     console.log(numero1);
+    ```
     
-    Funciones en JavaScript _First-class functions_:
-     Son OBJETOS. 
-     Si se pasan por parámetro son funciones de callback: 
-     
+Funciones en JavaScript _First-class functions_:
+Son OBJETOS. 
+Si se pasan por parámetro son funciones de callback: 
+    
+    ```js
      const functionOne = (x) => console.log(x);
      
      const functionTwo = (var1, var2) => var2(var1); 
      
      functionTwo(2, functionOne) ~ functionTwo(2, (x)=>console.log(x));
+     ```
      
-     
-     Dos ejercicios: Travel-agency y Averigua un número.
+Dos ejercicios: Travel-agency y Averigua un número.
     
-    Día 11
+Día 11
     
-    Funciones en JavaScript: Arrays
+Funciones en JavaScript: Arrays
     
-    Arrays: colecciones ordenadas de elementos.
+Arrays: colecciones ordenadas de elementos.
     
-    Se define con su literal: [ ];
-    Son objetos: `let miArray = [ ];`
+Se define con su literal: [ ];
+Son objetos: `let miArray = [ ];`
+
+```js
+let numeros = [1,2,3,4,5];
+let mascostas = ["perro","gato",4, null, true,{nombre: Osama}, [1,2,3,4]]
     
-    let numeros = [1,2,3,4,5];
-    let mascostas = ["perro","gato",4, null, true,{nombre: Osama}, [1,2,3,4]]
+console.log(numeros[0]); // -> 1
     
-    console.log(numeros[0]); // -> 1
+for(let i = 0; i< numeros.length; i++){
+console.log(numeros[i]);
+}
+``` 
+
+Ejercicio funciones-arrays con testing.
     
-    for(let i = 0; i< numeros.length; i++){
-      console.log(numeros[i]);
-    }
+Día 12
     
-    Ejercicio funciones-arrays con testing.
+Funciones de Array iteradoras: `array.map(callback)` `array.reduce(callback)`
     
-    Día 12
+Ejercicios de Arrays.
     
-    Funciones de Array iteradoras: `array.map(callback)` `array.reduce(callback)`
-    
-    Ejercicios de Arrays.
-    
-    Objetos: {_key:value_, _key:value_}. 
+Objetos: {_key:value_, _key:value_}. 
     - NombreObjeto.nombrePropiedad => inserta la prop en el obj si no existe y si existe sustituye el valor.
     - NombreObjeto["nombrePropiedad"]
     
-    Recorrer objetos: for(let prop in array){ console.log(array[prop]) }
+Recorrer objetos: for(let prop in array){ console.log(array[prop]) }
     
-    Ejercicio de academia.
+Ejercicio de academia.
     
   
-  Día 12
+Día 13
   
-  Monográfico de CSS Grid. 
+Monográfico de CSS Grid. 
   - Se aplica sobre el contenedor (= flex)
   - Grid primero definimos la cuadrícula:
+
+    ```CSS
     .grid{
       display:grid;
       grid-template-row: repeat(4, 5rem);
@@ -242,8 +251,7 @@ Hablamos de Git, el sistema de control de versiones:
      grid-row: 1 /span 2;
      grid-column: 4;
      }
-     
-   .grid{
+    .grid{
        width: 100%;
        height: 100vh;
        display:grid;
@@ -251,29 +259,32 @@ Hablamos de Git, el sistema de control de versiones:
        "header header"
        "main   aside"
        "footer footer"
-   }
+    }
    
-   header{
+    header{
     grid-area: header;
-   }
+    }
+    ```
+Corregimos el ejercicio de arrays-guapos. array.Map y array.Reduce
   
-  Corregimos el ejercicio de arrays-guapos. array.Map y array.Reduce
+Día 14
   
-  Día 13
+Trabajando con arrays y objetos dentro de funciones. Ejercicio del cluedo. 
   
-  Trabajando con arrays y objetos dentro de funciones. Ejercicio del cluedo. 
-  
-  Introducción al DOM. La representación de un documento html en forma de árbol. La necesita JavaScript para poder interaccionar con la página.
+Introducción al DOM. La representación de un documento html en forma de árbol. La necesita JavaScript para poder interaccionar con la página.
   1. Obtener el elemento que queremos manipular
   2. Después modificamos estilos, añadimos nuevos nodos hijos, etc.
   
-  Día 14
+Día 15
   DOM manipulation:
-    //css
+  -CSS
+    ```css
     .yellow{
     background-color:yellow;
     }
-    
+    ```
+  -javascript
+    ```js
     let parrafo = document.getElementsByTagName('p')[0];
     
     const callback = (event) => {
@@ -287,7 +298,7 @@ Hablamos de Git, el sistema de control de versiones:
     parrafo.addEventListener('click', callback);
     
     parrafo.removeEventListener('mouseover',callback);
-    
+    ```
     
     
    
