@@ -274,15 +274,9 @@ Introducción al DOM. La representación de un documento html en forma de árbol
   1. Obtener el elemento que queremos manipular
   2. Después modificamos estilos, añadimos nuevos nodos hijos, etc.
 
-
-Día 15
-
-Intro al DOM manipulation:
-    - Selecció de elements.
-    - Modificació de estils.
-    - Exercicis de manipulació del dom: tres botons i formulari
+Exercicis de manipulació del dom: tres botons i formulari
     
-Dia 16:
+Dia 15:
 
 - CSS
 ```css
@@ -309,7 +303,14 @@ Dia 16:
 ```
 Ejercicio: Hackaton
     
-   
+Día 16:
+
+- Ejercicios dom manipulation: eventos
+
+
+- Sass
+
+
    
   
 
