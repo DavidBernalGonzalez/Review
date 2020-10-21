@@ -159,8 +159,7 @@ Hablamos de Git, el sistema de control de versiones:
   
   Funciones JavaScript: 
     
-    ```js
-    
+```js
     function generarRandom(parametros){
         let aleatorio = Math.floor((Math.random()*10)+1);
         return aleatorio;
@@ -181,19 +180,19 @@ Hablamos de Git, el sistema de control de versiones:
     let numero3 = numeroRandomFlecha();
     
     console.log(numero1);
-    ```
+```
     
 Funciones en JavaScript _First-class functions_:
 Son OBJETOS. 
 Si se pasan por parámetro son funciones de callback: 
     
-    ```js
+```js
      const functionOne = (x) => console.log(x);
      
      const functionTwo = (var1, var2) => var2(var1); 
      
      functionTwo(2, functionOne) ~ functionTwo(2, (x)=>console.log(x));
-     ```
+```
      
 Dos ejercicios: Travel-agency y Averigua un número.
     
@@ -278,13 +277,13 @@ Introducción al DOM. La representación de un documento html en forma de árbol
 Día 15
   DOM manipulation:
   -CSS
-    ```css
+```css
     .yellow{
     background-color:yellow;
     }
-    ```
+```
   -javascript
-    ```js
+```js
     let parrafo = document.getElementsByTagName('p')[0];
     
     const callback = (event) => {
@@ -298,7 +297,7 @@ Día 15
     parrafo.addEventListener('click', callback);
     
     parrafo.removeEventListener('mouseover',callback);
-    ```
+```
     
     
    
