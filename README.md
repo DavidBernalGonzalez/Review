@@ -267,8 +267,29 @@ Hablamos de Git, el sistema de control de versiones:
   1. Obtener el elemento que queremos manipular
   2. Después modificamos estilos, añadimos nuevos nodos hijos, etc.
   
-  
-  
+  Día 14
+  DOM manipulation:
+    //css
+    .yellow{
+    background-color:yellow;
+    }
+    
+    let parrafo = document.getElementsByTagName('p')[0];
+    
+    const callback = (event) => {
+//      parrafo.style.backgroundColor = 'yellow';
+      parrafo.classList.add = '.yellow';
+    }
+    parrafo.onmouseover = callback;
+    parrafo.onclick = callback;
+    
+    parrafo.addEventListener('mouseover',callback);
+    parrafo.addEventListener('click', callback);
+    
+    parrafo.removeEventListener('mouseover',callback);
+    
+    
+    
    
    
   
