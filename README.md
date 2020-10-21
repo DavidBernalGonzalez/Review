@@ -275,14 +275,17 @@ Introducción al DOM. La representación de un documento html en forma de árbol
   2. Después modificamos estilos, añadimos nuevos nodos hijos, etc.
   
 Día 15
+
   DOM manipulation:
-  -CSS
+
+- CSS
 ```css
     .yellow{
     background-color:yellow;
     }
 ```
-  -javascript
+
+- javascript
 ```js
     let parrafo = document.getElementsByTagName('p')[0];
     
