@@ -310,6 +310,32 @@ Día 16:
 
 - Sass
 
+Dia 17:
+
+- Validación formularios con JavaScript. 
+    API validación js que podemos consultar para saber si se han pasado los filtros de validación:
+      filtro de validación en html: required, minlength, maxlength, min, max, pattern
+      Informan una propiedad validate. tooShort, patternMismatch, rangeUnderflow, rangeOverflow.
+      
+      ```html
+        <form novalidate>
+        <input type="text" name="nombre" minLength="3">
+        </form>
+      ```
+      ```css
+          input[type="text"]:invalid{
+            border: 1px solid red;
+          }
+       ```
+      ```javascript
+        let nombre = document.getElementsName('nombre')[0];
+        
+        if(nombre.validate.tooShort)
+            mensaje = `Has introducido ${nombre.value} carácter`;
+      ```
+        
+- the shopping cart
+
 
    
   
