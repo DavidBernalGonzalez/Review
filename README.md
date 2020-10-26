@@ -336,6 +336,79 @@ Dia 17:
         
 - the shopping cart
 
+Día 18:
+
+Programación Orientada a Objetos: Clases
+
+Clases: Objetos utilizados como moldes para crear otros objetos. 
+ES6: class Student {}
+
+Objetos creados a partir de la clase se llaman instancias: `let john = new Student();`
+
+Ejemplo:
+```js
+//estudiantes, profesores, miembros de administración
+
+
+class Persona {
+  name;
+  edad;
+  rol;
+
+  constructor(name, edad, rol){
+    this.name = name;
+    this.edad = edad;
+    this.rol = rol;
+  }
+}
+
+let persona = new Persona('Luis',25,'estudiante');
+
+console.log(persona.name);
+
+class Estudiante extends Persona{
+  
+  #calificaciones;
+
+  constructor(name, edad, rol){
+    super(name,edad,rol);
+    this.#calificaciones = [];
+  }
+
+  get calificaciones(){
+    return this.#calificaciones;
+  }
+
+  set calificaciones(calificacion){
+    this.#calificaciones.push(calificacion);
+  }
+
+}
+
+class Profesor extends Persona {
+  materia;
+
+  constructor(name,edad, rol, materia){
+    super(name,edad,rol);
+    this.materia = materia;
+  }
+
+  hacerTutorias(){
+    return `horario de ${this.materia} de 12:00 a 14:00`;
+  }
+}
+
+let estudiante = new Estudiante('Ana',22,'estudiante');
+
+let profesorReact = new Profesor('Sara', 30, 'profesor','React');
+
+console.log(profesorReact.hacerTutorias());
+
+console.log(estudiante);
+```
+
+
+
 
    
   
