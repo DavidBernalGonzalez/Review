@@ -407,7 +407,18 @@ console.log(profesorReact.hacerTutorias());
 console.log(estudiante);
 ```
 
+Día 19
 
+JavaScript Asíncrono:
+  - setTimeout(callback, delay); -- devuelven un id que podemos utilizar para parar la función con clearTimeout(id);
+  - setInterval(callback, interval); -- clearInterval(id)
+  
+ ... AJAX - API 
+ 
+ Día 20
+ 
+ Promises
+ 
 
 
    
