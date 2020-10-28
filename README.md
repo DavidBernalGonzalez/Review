@@ -417,9 +417,10 @@ JavaScript Asíncrono:
  
  Día 20
  
- Promises
- 
+Promises
+Ejercicios: codingame, margarita, codewars, suma+potencia.
 
+Día 21
 
    
   
