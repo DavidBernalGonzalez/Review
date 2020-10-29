@@ -422,7 +422,28 @@ Ejercicios: codingame, margarita, codewars, suma+potencia.
 
 Día 21
 
-   
+HTTP: protocolo o conjunto de reglas para establecer las comunicaciones via web.
+  - Método o Verbo de comunicación:GET, POST, PUT, DELETE, HEAD, OPTIONS,...
+  - URL: dirección donde se encuentra el recurso.
+CORS: Cross-Origin Resource Sharing (CORS)
+  - API Countries: no hay problema porque la petición es una Simple Request.
+  - API Neighbours: ?key=ASDFLKASDFOI&Country_code=
   
+Request: headers Method, URL, authentication
+Response: headers, status codes: 200, 404, 500, 401,201
 
+---
+
+API fetch()
+  Trabajar con recursos via HTTP.
+  Devuelve una promesa con la respuesta.
+    - response.json(); --> array de objetos javaScript.
+    - response.arrayBuffer; --> streaming para visionar video
+    - response.text(); 
+ 
+---
+Destructuring de arrays y objetos: 
+   - arrayNew = [...array]
+   - {name, surname}= user;
+   - {name:nombre, surname: apellido}= user;
  
