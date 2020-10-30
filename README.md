@@ -446,4 +446,16 @@ Destructuring de arrays y objetos:
    - arrayNew = [...array]
    - {name, surname}= user;
    - {name:nombre, surname: apellido}= user;
+   
+Día 22
+
+- API Geolocalización. Extraer coordenadas de un punto. Donde nos encontramos. 
+   `navigator.geolocation`
+   Objeto: Position
+- Representación de unas coordenadas en un mapa: google.Maps, leaflet.js Open Street Map, Bing.com/maps, entre otras.
+
+Ejercicio de los mapas.
+
+
+   
  
