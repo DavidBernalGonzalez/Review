@@ -456,6 +456,48 @@ Día 22
 
 Ejercicio de los mapas.
 
+Día 23
 
+TypeScript: JavaScript fuertemente tipado. Tipamos propiedades, objetos, funciones...
+  -Utilizamos tipos básicos: string, number, boolean, Symbol, Object
+  -Tipos personalizados: 
+    - Se declaran con `type` + un alias: `type stringArray = Array<string>`
+    - Declarar tipos con `interface`: `interface {name: string, age: number}`. Manera de dar forma a los datos.
+  - Incluir ESNext
+  - Anotaciones: @templateUrl: Metadatos que modifican el compartamiento de objetos
+  
+Compilación: configuramos TypeScript en el archivo `tsconfig.json`:
+  - a qué versión de JavaScript queremos compilar,
+  - checking de errores, grado de rigurosidad.
+
+TypeScript permite exportar información que se puede utilizar con herramientas Linting. ESLint, TSLint.
+
+Es el lenguaje de programación de Angular y cada vez de más frameworks de front-end y de back-end.
+
+Ejercicio de la calculadora
+
+Día 24
+  Rehicimos la calculadora para aceptar cualquier número de parámetros.
+  Vimos como compilar typescript via tsc para generar el build.
+  Explicamos lo que eran los __módulos__
+    - Estructuras para limitar el ámbito de los bloques de código que contiene. 
+    - Normalmente un módulo coincide con un fichero. Ej:
+        - calculadora.ts --función calculator // multiplier();
+        - multiplier.ts -- función multiplier
+    - exportar un bloque de código lo convierte en un módulo. export class{}, export function(){}
+    - para utilizar la información de un módulo desde otro módulo hay que importar el bloque de código. `import multiplier from 'multiplier'`
    
+   - Caso de export parcial del módulo
+    + funciones...
+    `export const miFunc = () =>{}`   ||| import {miFunc} from 'miModulo';
+    
+    - Caso de export total del módulo
+    `export default miFunc`           ||| import miFunc from 'miModulo';
+
+  npm package, npm module que se guarda `node_modules`
+   - ámbitos privados que tengo que extraer mediante un import.
+   
+ Hicimos ejercicios difíciles de TypeScript
+ TypeScript basics.
+ 
  
