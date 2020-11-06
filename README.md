@@ -500,4 +500,37 @@ Día 24
  Hicimos ejercicios difíciles de TypeScript
  TypeScript basics.
  
+ Dia 25
+ 
+ ### Angular
+ 
+ FRAMEWORK de desarrollo de FRONTEND basado en JavaScript (TypeScript) junto con otros frameworks como React, Vue, Svelte,... sirven para hacer aplicaciones SPA (Single Page Application).
+ 
+ SPAs: Una web que no hace falta refrescar para actualizarse. Sólo tiene un html. 
+ 
+ Aplicación Angular: 
+ 
+ Instalación a nivel global:
+ - Tengo que instalar Node.Js, para utilizar el gestor npm:
+ - Instalo el @angular/CLI cliente para línea de comando en angular
+ 
+ Para construir una aplicación angular desde terminal: ng new my-app. 
+ 
+ Único repositorio de Angular: workspace => ng new nombre --createApplication=false  --directory=frontend --interactive=false
+ 
+ Para crear aplicaciones dentro del workspace: ng generate application my-app --style=scss --skipTests=true --routing
+    Reconoce que está dentro de un workspace y ya no duplica el fichero Node_modules
+    Modifica el angular.json añade una entrada al array projects.
+    Genera un subdirectorio llamado projects
+
+El repositorio único permite reutilizar elementos de unos proyectos en otros.
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
  
