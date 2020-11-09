@@ -526,7 +526,27 @@ Día 24
 El repositorio único permite reutilizar elementos de unos proyectos en otros.
 
 
+Día 26
 
+Módulos y Routing de Angular
+
+Estructurar el código en funcionalidades dentro de módulos. Los módulos sirven para encapsular, para enrutar de forma lazy (los componentes se cargan en diferido, no con la carga inicial)
+  - Módulos de características - Feature Modules
+  - Módulos de utilidades compartidas - Shared Modules
+  - Módulo raíz - AppModule
+  - Módulos reutilizables - Reusables Modules
+  
+ Para generar módulos: `ng g m commons --routing`
+ Dentro de los módulos creamos componentes: `ng g c commons/header --export`
+ 
+ Un componente está formado: una vista(html), una hoja de estilos (scss) y un controlador (.ts)
+ Los componentes se incluyen en el componente raíz (app.component) mediante su selector (ej.: app-header) DE FORMA ESTÁTICA
+ Los componentes se pueden incluir DE FORMA DINÁMICA mediante la etiqueta (directiva) `<router-outlet>`
+  - Hay que enrutar los componentes en el fichero de routing: `AppRoutingModule`.
+  - Utilizamos la propiedad routes para redirigir la navegación a un componente.
+  
+ 
+ 
  
  
  
