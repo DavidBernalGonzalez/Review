@@ -545,7 +545,22 @@ Estructurar el código en funcionalidades dentro de módulos. Los módulos sirve
   - Hay que enrutar los componentes en el fichero de routing: `AppRoutingModule`.
   - Utilizamos la propiedad routes para redirigir la navegación a un componente.
   
+ Día 27
  
+ Angular routing:
+  - Navegación entre componentes.
+  - enrutamiento desde la barra navegación cargando un componente:
+    1. Definimos el path y el componente al que se navega - AppRoutingModule: `routes = []`
+    2. Definir el routerLink dentro del menú de navegación.
+    3. Tiene que existir una etiqueta <router-outlet> que es donde se carga el componente.
+        - Si el enrutamiento está definido a nivel de root - el componente se carga en el AppComponent
+        - Si el enrutamiento está definido a nivel de root pero como children - el componente se carga dentro del componente padre
+  
+   - Paso de parámetros a través de la ruta: ":id" - ActiveRoute se trabaja a nivel de componente.ts. Es un objeto asíncrono que devuelve un Observable. Para obtener información de un observable hay que subsribirse al observable.
+   
+   - Carga diferida de módulos: AppRoutingModule -> loadChild() difiere la carga a un módulo.
+  
+  
  
  
  
