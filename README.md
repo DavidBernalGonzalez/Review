@@ -560,7 +560,23 @@ Estructurar el código en funcionalidades dentro de módulos. Los módulos sirve
    
    - Carga diferida de módulos: AppRoutingModule -> loadChild() difiere la carga a un módulo.
   
+  Día 28
   
+  Pasar información de la clase del componente a la vista.
+    - Interpolación de variables: {{ miVariable }} -> Evalúan la expresión que contiene y si resulta en un string lo muestra. Se utiliza para meter texto en las etiquetas o para dar valora a atributos del tipo src, href, ...
+     `<p>{{miParrafo}}</p>`
+    - Binding de propiedades: Pasamos información de variables a atributos, de cualquier tipo. Esto requiere una notación especial:
+      [atributo]='nombreVariable'.
+        `<button [disabled]='isTrue'>`
+    - Binding de eventos: Asociamos métodos de la clase a eventos de la vista:
+      `<button (click) = 'onClick()'>`
+  
+  Ejercicio de los botones.
+  
+  Día 29
+  
+  
+    
  
  
  
