@@ -575,7 +575,35 @@ Estructurar el código en funcionalidades dentro de módulos. Los módulos sirve
   
   Día 29
   
+  Directivas: son clases que extienden las propiedades del HTML.
   
+    - Añadir o quitar elementos del DOM: **directivas estructurales** ==> *ngFor, *ngIf, ngSwitch
+        ```html
+        <ul *ngFor="let animal of animals, let i = index, let x = odd">
+        <ng-container *ngIf="animal.category === 'felino'">
+           <li [ngClass]='{impar:x}'><a href="https://assets/images/{{animal.id}}"> {{animal.name}}</a>
+        </ng-container>
+        </ul>```
+    
+    Para hacer un if..else <ul *ngIf="true then cuadro_felino; else cuadro_canino ">
+    
+    <ng-template #cuadro_felino>
+    <li></li>
+    </ng-template>
+    <ng-template #cuadro_canino>
+    </ng-template>
+    
+   - Directivas de atributos: Modifican estilos del DOM.
+     [ngClass] -- añade o quita clases
+     [ngStyle] -- para aplicar estilos directamente.
+    
+        
+  - ngModel: Directiva de formularios. Bidireccional. Se pasa información de la plantilla a la clase del componente y viceversa.
+    <input [(ngModel)]='miVariable'>
+    
+    <p>{{miVariable}}</p>
+    
+    
     
  
  
