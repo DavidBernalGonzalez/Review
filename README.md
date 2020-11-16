@@ -604,7 +604,19 @@ Estructurar el código en funcionalidades dentro de módulos. Los módulos sirve
     <p>{{miVariable}}</p>
     
     
+    Día 30
     
+Pipes: Herramientas  para manipular un dato de entrada. Entra un dato y sale un dato convertido.
+  
+  - Se utilizan en la vista: `{{variable | miPipe }}`
+  - Pipes prediseñadas: UppercasePipe, LowercasePipe, Decimal Pipe, CurrencyPipe, JSONPipe, DatePipe,...TitlecasePipe
+  - Pipes personalizadas: `ng g pipe miPipe`
+  
+      Método => transform(dato: any, numMax: number){
+      return <<dato transformado>>
+      }
+  
+   - capitalize, smartTruncate  
  
  
  
