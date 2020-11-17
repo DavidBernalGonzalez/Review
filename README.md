@@ -619,7 +619,33 @@ Pipes: Herramientas  para manipular un dato de entrada. Entra un dato y sale un 
    - capitalize, smartTruncate  
  
  
+ Día 31
  
+ Pipe filter => filtrar un Object[] pasando un campo de ese objeto y una cadena a buscar.
+ 
+ El valor del input corresponde al filtro del pipe:  
+ 
+        <ul *ngFor = " for let alimento of foods | filter : 'name' : input.value>
+          <li>{{alimento.name}}</li>
+        </ul>
+ Formularios:
+    Form01 --> probar estructuras de Material 
+           --> la información se recoge de los campos input y se envía mediante un botón submit
+           //html       - <form #form01 = 'ngForm' (ngSubmit)=enviarDatos(form01) >
+                      
+                      <input #username name='username'> 
+                      <button type='submit'>Enviar</button>
+                    </form>
+          //ts  
+          username:string;
+          enviarDatos(formulario) {
+              this.username = formulario.controls.username.value;
+          }
+          
+          enviarALaBaseDeDatos(username);
+        
+           
+        
  
  
  
