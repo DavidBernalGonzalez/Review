@@ -645,6 +645,54 @@ Pipes: Herramientas  para manipular un dato de entrada. Entra un dato y sale un 
           enviarALaBaseDeDatos(username);
         
            
+Día 32
+
+Form02: Utilizamos clases para manejar la información.
+    `ng g class shared/classes/user`
+    
+    Una clase está formada por propiedades y métodos representa a un user.
+        export class User {
+          private _username: string;
+          private _password: string;
+          
+          constructor(){
+            this._username = '';
+            this._password = '';
+          }
+          //Métodos accessors
+          
+          public get username(){
+            return this._username;
+          }
+          public set username(username:string){
+            this._username = username;
+          }
+          
+        }
+        
+      Formulario template-driven con validaciones:
+        
+        <form #form02 = 'ngForm' >
+            <mat-form-field>
+              <mat-label>Name</mat-label>
+              <input matInput 
+                     name = 'username'
+                     #username = 'ngModel'
+                     ngModel // hace que se generen una serie de propiedades dentro del control: errors, valid|invalid, pristine|dirty, touched|untouched
+                     required // username.errors.required => true | false
+                  />
+              <mat-hint></mat-hint>
+<!--              <mat-error *ngIf='username.invalid; else success'> -->
+               <mat-error *ngIf='username.dirty || username.touched'>
+                   <mat-error *ngIf='username.errors.required'> Error el campo no puede estar vacío</mat-error>
+              </mat-error>
+            <mat-form-field>
+          
+        </form>
+        <ng-template #success>
+        El formulario es correcto
+        </ng-template>
+        
         
  
  
