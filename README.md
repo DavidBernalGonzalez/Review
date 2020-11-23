@@ -692,8 +692,54 @@ Form02: Utilizamos clases para manejar la información.
         <ng-template #success>
         El formulario es correcto
         </ng-template>
-        
-        
+  
+ Día 33
+ 
+ Formularios Reactivos: programación reactiva:
+    - Importar en el módulo: `ReactiveFormModule`,
+    - Crear un formulario reactivo:
+      - Instaciamos la clase FormGroup: 
+      ```ts
+      formGroup = new FormGroup({
+      name: new FormControl('', [Validators.required, Validators.minLength(4),...]),
+      dni: new FormControl()
+      })
+      ```
+     - Inyectando el Servicio FormBuilder en el constructor del componente: `constructor(private formBuilder: FormBuilder){}`
+     ```ts
+     formGroup: FormGroup;
+      ngOnInit(){ 
+      this.formGroup = this.formBuilder.group({
+      name:['',[Validators.required]],
+      dni:['',[Validators.required]]
+      })
+      }
+      ```
+    - Conectar el formulario al HTML:
+     ```ts
+     <form [formGroup]='formGroup' >
+     <input [formGroupName]='name'>
+     <input [formGroupName]='dni'>
+     </form>
+     ```
+ Día 34
+    Jerarquía de componentes:
+    
+    - smart components | container components: componentes contienen la lógica del componente
+    - dumb components | presentational components: componentes contien la vista del componente
+    
+    - El componente que tiene la lógica tiene que pasar información a los componentes que tienen vistas.
+    - Los componentes que tienen vistas pasan información del formulario al comp. contenedor.
+    
+    Se declaran propiedades que intercambian datos con el decorador: @Input()
+    Se declaran métodos que envían información al contenedor con @Output(). Son instancias de la clase EventEmitter<>.
+    
+    Ejercicio incorporar los botones: borrar y editar.
+    
+    
+    
+    
+    
  
  
  
