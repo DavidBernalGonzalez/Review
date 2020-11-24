@@ -735,6 +735,33 @@ Form02: Utilizamos clases para manejar la información.
     Se declaran métodos que envían información al contenedor con @Output(). Son instancias de la clase EventEmitter<>.
     
     Ejercicio incorporar los botones: borrar y editar.
+
+Día 35
+    Services:
+    
+    - Funcionalidades no directamente relacionadas con la presentación y compartidas por distintos componentes. Ej: interacción con el back-end, autenticación, logging, etc.
+    
+    - `ng g s <nombre_servicio>`
+    
+    - Clase con un decorador @Injectable -Hace que la clase se pueda inyectar como dependencia de otras clases.
+    - Declarado por un provider: providerIn 'root' dentro del decorador @Injectable.
+            @ngModule(providers:[])
+            
+    - Declarar un parámetro en el constructor de la clase donde se quiere inyectar el servicio:
+        ```ts
+        ...
+        constructor(private nombreServicio: NombreServicio){}
+        ```
+        
+        
+        
+        
+        
+    
+    
+    
+    
+    
     
     
     
