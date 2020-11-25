@@ -753,8 +753,23 @@ Día 35
         constructor(private nombreServicio: NombreServicio){}
         ```
         
-        
-        
+Día 36
+
+  Servicios HTTP, se utilizan para hacer peticiones vía HTTP: GET, POST, PUT, DELETE,...
+    Se implementan con una API HTTPClient.
+    Para utilizar el HTTPCLient: importar el `HTTPClientModule` desde el `App.Module` e inyectar el servicio `HTTPClient` en el constructor de la clase donde se vayan a hacer las peticiones, normalmente otro servicio.
+    
+  Los métodos de HTTP, devuelven Observables.
+    - Observables: Envolvemos un stream de datos asíncrono que va devolviendo información a los métodos que estén suscritos al observable. FUncionan de forma similar a las Promesas, pero van emitiendo de forma continua en el tiempo.
+    - 2 tipos de observables:
+      - Frios: Observables sólo devuelven información cuando se suscriben.
+      - Calientes: Emiten información independientemente de que haya suscriptores.
+    
+    - Se implementan a partir de la librería rxjs
+    -   `pipe`: concatena funciones de observables. 
+    -   `map`, `merge`, `findIndex`,...
+    
+    
         
         
     
