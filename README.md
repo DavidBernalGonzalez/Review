@@ -769,6 +769,32 @@ Día 36
     -   `pipe`: concatena funciones de observables. 
     -   `map`, `merge`, `findIndex`,...
     
+ Día 37
+ 
+  Una app desde 0: ORDER-LIST:
+      Servidor: json-server
+      App: Angular y HTTPClient
+      Trello: Kanban
+      
+    1. BBDD: Mis datos son estructurados y necesitan estar relacionados entre si. Mis datos alimentan un front-end y lo que quiero es mucha rapidez i/o, BBDD relacionales o no-sql.
+    2. Front-end: Diseño mis pantallas, diseño el wireframe, navegación, componentes.
+    3. Para trabajar el front-end no hacen falta datos. Array de datos. placeholders de APIs, de fotografías. 
+    4. Arquitectura de la aplicación: Estructura de directorios, módulos, servicios, componentes, clases, interfaces, etc.
+    5. Routing.
+    6. Funcionalidades x iteración de programación: Pasos del 6 al 8 hasta terminar el proyecto.
+        - User stories: yo como usuario quiero logarme en la aplicación con mi nombre de usuario y mi password.
+              - UserComponent
+                    . Se cargará desde: la url raíz
+                    . Validaciones de front-end
+                    . Servicio de autenticación
+                          Métodos relacionados.
+                    . Estrategias de autenticación: bearer token, basic-auth, o-auth (facebook, google, ...)
+                
+    7. Trabajamos con servidores de desarrollo para hacer pruebas. Integración, Regresión.
+    8. MVP al final de la iteración se sube a un servidor de preproducción. Repetición de pruebas. Se enseña la app al cliente.
+    (firebase)
+    9. Subida a producción pruebas con numero limitado de usuarios.(beta)
+    10. Aplicación pasa a versión estable. Los cambios vienen por ramas de hotfix, actualización, etc.
     
         
         
