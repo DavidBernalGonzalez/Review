@@ -796,10 +796,26 @@ Día 36
     9. Subida a producción pruebas con numero limitado de usuarios.(beta)
     10. Aplicación pasa a versión estable. Los cambios vienen por ramas de hotfix, actualización, etc.
     
+   Día 37    
         
-        
+   Trabajar con el HTTPCLient la parte de refrescar la lista después de hacer un create, delete, update
+     
+    Angular.http nos devuelve un Cold Observable. Lo tenemos que transformar en un Hot Observable con BehaviourSubject de la librería rxjs.
     
-    
+    Como utilizar cloud firebase.google.com para almacenar datos:
+      - Crear un proyecto dentro del cloud
+      - Crear una aplicación web
+      - Copiamos la variable firebaseConfig dentro del fichero de environments.ts
+      - `ng add @angular/fire`
+      - Importar en el AppModule:
+          - AngularFireModule.initialize.app('firebaseConfig');
+          - AngularFirestoreModule
+          
+      - Creamos un servicio para interactuar con Firebase:
+          - Inyectar el AngularFirestore
+          - Creamos los CRUD's
+          
+ 
     
     
     
