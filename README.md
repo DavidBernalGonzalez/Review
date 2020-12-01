@@ -815,7 +815,19 @@ Día 36
           - Inyectar el AngularFirestore
           - Creamos los CRUD's
           
- 
+  Día 38
+  
+  Subida a producción + retrospectiva
+  
+  Día 39
+  
+  Montando aplicación TODO-LIST. Para probar ciclo de vida de un componente:
+    Etapas básicas de creación y destrucción: instanciación de la clase (`constructor`), `ngOnInit` (interfaz OnInit), `ngOnDestroy`(interfaz OnDestroy)
+    Etapas cíclicas de detección de cambios: `ngOnChanges(SimpleChages)`, `ngDoCheck()`, `ngAfterViewInit`, `ngAfterViewChecked`
+    Etapas relacionadas con la proyección de contenido (project-content): `ngAfterContentInit`,`ngAfterContentChecked`
+    
+    TODO-LIST: Componentes+Servicio+Interface+Firebase.
+    
     
     
     
