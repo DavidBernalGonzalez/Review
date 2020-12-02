@@ -828,7 +828,28 @@ Día 36
     
     TODO-LIST: Componentes+Servicio+Interface+Firebase.
     
-    
+Día 40
+
+  Seguimos con los hooks: ejemplos de `ngOnChanges(SimpleChanges)`
+  
+  Modal (Material se llaman dialogs)
+    Un componente que está controlado por otro componente. 
+    - Controlador abre el modal pasándole información.
+    - El propio modal es el responsable de cerrarse y enviar información al controlador.
+   
+   Material Dialogs: 
+      - Crear el componente y dentro del módulo se tiene que incluir como __entry component__
+      - En el componente __controlador__: inyectamos el MatDialog.
+          Definimos un método de abrir Modal: 
+              - Configuración del modal: MatDialogConfig donde configuramos el modal
+                    - Incluimos los datos a pasar al modal.
+              - const dialogRef =  matDialog.open(componente,config)
+              - dialogRef.afterClosed().subscribe(data => hago algo con los datos)
+     - En el __modal__, definimos los métodos de cerrar el modal:
+              - inyectar una propiedad: @Inject() MAT_DIALOG_DATA, data
+              - invocamos al método close para cerrar el modal.
+              
+              
     
     
     
