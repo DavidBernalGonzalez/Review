@@ -849,7 +849,31 @@ Día 40
               - inyectar una propiedad: @Inject() MAT_DIALOG_DATA, data
               - invocamos al método close para cerrar el modal.
               
-              
+Día 41
+
+  Estuvimos de nuevo montando la aplicación desde 0. 
+  Arquitectura:
+    Modules:
+    - Componentes presentacionales, dumb components, etc.
+    - Componentes controladores, featured components.
+    Shared:
+    - services: auth.service, user.service,
+    - models: clases y/o interfaces
+    - guards: auth.guard
+    - material
+    - components comunes y reutilizables: header, hero, sidebar
+    - helpers:
+        - interceptors
+        - fake-backend
+  Autenticación:
+    - Enviamos un usr/password desde la app al backend.
+    - El backend responde con un token de autenticación (jwt).
+    - El cliente guarda el token en el localstorage
+    - El cliente envía el token con cada petición de datos.
+  
+    
+    
+  
     
     
     
