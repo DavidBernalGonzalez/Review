@@ -871,7 +871,39 @@ Día 41
     - El cliente guarda el token en el localstorage
     - El cliente envía el token con cada petición de datos.
   
-    
+ Día 42
+ 
+ Aplicación angular-auth
+ 
+  - Login
+      . Formulario (componente: enrutable (featured component) + presentacional)
+      
+  1. Aplicación se carga: ruta http://localhost:4200/ => homecomponent
+  2. Navega al formulario de login: submit --> @output
+  3. LoginComponent carga el servicio de envío de datos
+  4. EL servicio AuthService envía información al backend: fake-backend(interceptors) o firebase authentication
+  5. Recibe un token de authorization: JWT y lo guarda en localstorage.
+  6. Navegas al componente permitido: home o userprofile, etc.
+  
+  - Profile
+  
+  1. Obtener los datos del backend. Para ello introducimos token en la cabecera de la petición de datos.
+  
+  - Register
+  
+  1. Carga el servicio: AuthService o UserService
+  2. Método que es un createUser sin authorization.No permite datos duplicados.
+  3. VerifiedEmail --> Firebase
+  4. Navegue al Login.
+  
+  . Encender y apagar elementos de la barra de navegación. Con un flag dentro de localstorage.
+  . Proteger las rutas del acceso directo desde el navegador. Mediante Guards. 
+  
+  
+  
+  
+  - Register
+  - Profile
     
   
     
