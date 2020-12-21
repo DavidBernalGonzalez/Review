@@ -905,8 +905,65 @@ Día 41
   - Register
   - Profile
     
+  Día 43 - 50
+  - Projecte
   
-    
+  Día 51
+  - Testing Intro
+  
+      - Testing aporta valor a la empresa y al usuario:
+        - Corregir errores,
+        - Comprobar funcionalidad,
+        - Optimizar procesos
+        
+      - A nivel de programadores podemos enfrentar dos tipos de testing: Unit Tests y e2e (tests de integración, etc.)
+      - Unit Tests: Se basan en el principio de las 3As:
+          - Arrange: Ámbito y el escenario de prueba. Cómo aislar nuestra suite de pruebas.
+          - Act: Los test cases. Qué queremos probar
+          - Assert: La comprobación del resultado. Básicamente es un true|false.
+      - Isolated Test Units: Probamos clases.
+          - Probamos clases que no tienen dependencias. 
+          - Ejemplo del cálculo IMC.
+      - Estructura de un test:
+      ```ts
+        Describe('Test de la clase',()=>{
+            
+            beforeEach(()=>{
+            
+              classToTest = new Class();
+            
+            })
+            
+            it('debería instanciar la clase',()=>{
+              expect(classToTest).toBeTruthy();
+            })
+            
+        })
+      ```
+  Día 52
+  - Testing components
+      Tener en cuenta que el componente tiene dos partes:
+        - La clase
+        - La vista
+  - Dependencias de un componente:
+        - Necesita un módulo, --> `TestBed.configureTestingModule()` genera NgModule
+        - Inyectar un servicio para tener datos. --> `TestBed.inject(<<nombre del servicio>>)`
+        
+  - componente = new Componente();
+        - No tendría acceso a su vista.
+        
+  - fixture = TestBed.createComponent(Componente);
+         - Para acceder a la parte de la clase: fixture.componentInstance
+         - Para acceder al DOM: fixture.nativeElement | fixture.debugElement.nativeElement
+  - Para poder testar **cambios** en el componente, necesitamos disparar la máquina de detección de cambios:
+        - fixture.detectChanges();
+  - Hacemos los asserts:
+        - expect(fixture.nativeElement.querySelector('.movie').value).toBe('miPelicula');
+  
+  Colaboradores:
+    - Funciones especiales que simulan comportamientos:
+        - Sustituyen al servicio: mocks y spies.
+        - Valores de retorno de una api: stubs.
     
     
     
