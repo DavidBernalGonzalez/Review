@@ -965,7 +965,22 @@ Día 41
         - Sustituyen al servicio: mocks y spies.
         - Valores de retorno de una api: stubs.
     
-    
+Día 53
+
+  - Aplicación favorite-movies:
+    - Pruebas con smart components y dumb components
+      - TestBed y Fixtures
+    - Servicios HTTP:
+      - Inyectar el cliente de Test: HTTPTestController
+      - expectations:
+        - expectOne()
+        - req.request.url
+        - req.request.method
+        - ...
+       - req.flush(datosMockeados)
+       - http.verify()
+       
+   - Aplicación snappCar: caso de entrevista de trabajo.
     
     
     
