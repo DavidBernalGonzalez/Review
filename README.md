@@ -1001,7 +1001,9 @@ Día 53
                 <ion-card> ---> Cards
                 
      Ejemplos de grid.
- 
+
+      <ion-virtual-scroll> permite la carga diferida de elementos en listas largas.
+          <ion-img> carga imágenes en diferido
  
  
  
