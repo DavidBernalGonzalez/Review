@@ -982,10 +982,25 @@ Día 53
        
    - Aplicación snappCar: caso de entrevista de trabajo.
     
+  Día 1 - Ionic Intro & Web Components  
+  
+  Día 2 - Ionic Components
     
-    
-    
- 
+    Layout en Ionic:
+       - Básico: 
+       ```html
+       <ion-app>
+          <ion-header>
+          <ion-content>
+      
+      - Responsive Grid:---> Gallery
+        <ion-grid> // Divide el viewport en 12 columnas
+          <ion-row>
+            <ion-col size-lg="3" size-md="4" size-sm="6" size="12">
+                <ion-img>
+                <ion-card> ---> Cards
+                
+     Ejemplos de grid.
  
  
  
